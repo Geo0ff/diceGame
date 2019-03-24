@@ -34,7 +34,10 @@
             
 
             // update the ui 
-             document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+            
+            document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+             var input = document.querySelector('.final-score').value;
+             console.log(input);
             //check if player won the game 
             if (scores[activePlayer] >= 50) { 
                 document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
